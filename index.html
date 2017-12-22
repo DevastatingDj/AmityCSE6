@@ -6,25 +6,47 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+             $(document).ready(function(){
+             $(".bordered").mouseover(function(){
+                 $(this).animate({fontSize:70},500);
+             });
+             $(".bordered").mouseout(function(){
+                 $(this).animate({fontSize:56},500);
+             });
+              $(".dj").hover(function() { 
+                  $(this).attr({src:"images/dj.jpg",width:140});
+                    },function() {
+                  $(this).attr({src:"images/pic01.png",width:89});
+                                 });
+              $(".logo").mouseover(function(){                    $(".anim").animate({width:350},500);
+                 });
+                $(".logo").mouseout(function(){                    $(".anim").animate({width:0},200);
+                 }); 
+             });
+        </script>
 	</head>
 	<body>
-
 		
 			<header id="header">
 				<div class="inner">
 					<a href="index.html" class="logo"><strong>Amity Computer Science and Engineering</strong> </a>
+                    
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="#.html">About Us</a>
 						<a href="#.html">Contact Us</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+                    <hr style="margin-top: 0px" class="anim">
 				</div>
+                
 			</header>
 			<section id="banner">
 				<div class="inner">
 					<header>
-						<h1>Welcome to CSE 6</h1>
+						<h1 class="bordered">Welcome to CSE 6</h1>
 					</header>
 
 					<div class="flex ">
@@ -62,7 +84,7 @@
 					<div class="flex flex-2">
 						<article>
 							<div class="image round">
-								<img src="images/pic01.png" alt="Pic 01" />
+								<img src="images/pic01.png" alt="Pic 01" class="dj" />
 							</div>
 							<header>
 								<h3>Dhananjai<br>Sharma</h3>
