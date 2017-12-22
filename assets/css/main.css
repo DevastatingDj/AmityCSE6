@@ -1659,7 +1659,18 @@
 			color: inherit;
 			text-decoration: none;
 		}
-
+.bordered{
+        border:6px solid orange;
+        border-radius: 30px;
+        /*width:50%;*/
+        border-left-width: inherit;
+        border-right-width: inherit;
+        margin-left: 300px;
+        padding:0px;
+}
+.anim{
+    width:0px;
+}
 	h2 {
 		font-size: 1.85em;
 		font-weight: 300;
